@@ -1,10 +1,29 @@
+# Project information
 site_name: Aprende Python de cero a experto
 site_description: Guía online para aprender Python de cero a experto.
 site_url: https://cursopython.netlify.app
+site_author: Jon Vadillo
+
+# Repo information
+repo_name: jvadillo/aprende-python-web
+repo_url: https://github.com/jvadillo/aprende-python-web
+
+# Copyright  
+copyright: 2023 Jon Vadillo - Licencia CC BY-NC-SA
+
 nav:
     - Principal: index.md
     - Introducción: 01-introduccion.md
     - Tipos de datos y variables: 02-Tipos-de-datos-y-Variables.md
+    - Operadores y expresiones: 03-Operadores-y-expresiones.md
+    - Estructuras de control: 04-Estructuras-de-control.md
+    - Listas y tuplas: 05-Listas-y-Tuplas.md
+    - Diccionarios: 06-Diccionarios.md
+    - Funciones: 07-Funciones.md
+    - Excepciones: 08-Excepciones.md
+    - Clases y objetos: 09-Clases-y-Objetos.md
+    - Herencia: 10-Herencia.md
+    - Módulos y Paquetes: 11-Modulos-y-Paquetes.md
 
 extra:
   social:
@@ -32,7 +51,7 @@ theme:
       primary: teal
       accent: amber
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/weather-night
         name: Switch to system preference
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -40,15 +59,14 @@ theme:
       primary: teal
       accent: amber
       toggle:
-        icon: material/lightbulb
+        icon: material/weather-sunny
         name: Switch to dark mode
-repo_name: jvadillo/aprende-python-web
-repo_url: https://github.com/jvadillo/aprende-python-web
+
 edit_uri: ''
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  
-copyright: 2023 Jon Vadillo - Licencia CC BY-NC-SA
+
+

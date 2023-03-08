@@ -15,4 +15,49 @@
          <lastmod>2023-03-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://cursopython.netlify.app/03-Operadores-y-expresiones/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/04-Estructuras-de-control/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/05-Listas-y-Tuplas/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/06-Diccionarios/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/07-Funciones/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/08-Excepciones/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/09-Clases-y-Objetos/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/10-Herencia/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cursopython.netlify.app/11-Modulos-y-Paquetes/</loc>
+         <lastmod>2023-03-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
