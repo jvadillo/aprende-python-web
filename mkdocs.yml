@@ -1,6 +1,6 @@
 site_name: Aprende Python de cero a experto
 site_description: Guía online para aprender Python de cero a experto.
-site_url: https://aprendepython.netlify.app
+site_url: https://cursopython.netlify.app
 nav:
     - Principal: index.md
     - Introducción: 01-introduccion.md
