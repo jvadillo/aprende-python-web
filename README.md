@@ -15,8 +15,8 @@ El curso **no requiere conocimientos previos** de ningún tipo ni experiencia en
 ## ¿Qué aprenderás?
 El curso comenzará tratando **los fundamentos más básicos de Python**, adentrándose paso a paso en aspectos más complejos y fascinantes del lenguaje. A continuación tienes el índice de contenidos, pero te aviso de que el material está en constante mejora y evolución.
 
- 1. [Introducción](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/manuscript/01-Introduccion.md) 
- 2. [Variables y Tipos de datos](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/manuscript/02-Tipos-de-datos-y-Variables.md) 
+ 1. [Introducción](./01-Introduccion.md) 
+ 2. [Variables y Tipos de datos](./02-Tipos-de-datos-y-Variables.md) 
  3. [Operadores y expresiones](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/manuscript/03-Operadores-y-expresiones.md)
  4. [Estructuras de control](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/manuscript/04-Estructuras-de-control.md)
  5. [Listas y Tuplas](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/manuscript/05-Listas-y-Tuplas.md)

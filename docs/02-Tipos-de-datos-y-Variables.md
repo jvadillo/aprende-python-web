@@ -24,10 +24,10 @@ __Nota__: No olvides que lo que la guía plantea son recomendaciones y no obliga
 ## Resumen de tipos de variables
 
 ```python
-    edad = 24 # número entero (integer)
-    precio = 112.9 # número de punto flotante (float)
-    titulo = ‘Aprende Python desde cero’ # cadena de texto (string)
-    test = True # booleano
+edad = 24 # número entero (integer)
+precio = 112.9 # número de punto flotante (float)
+titulo = ‘Aprende Python desde cero’ # cadena de texto (string)
+test = True # booleano
 ```
 
 ## Lectura de datos en Python

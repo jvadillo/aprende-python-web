@@ -837,27 +837,27 @@ En caso de no estar instalado, basta con ejecutar el siguiente comando en la con
 <p>Ya tenemos Python instalado en nuestro sistema operativo, por lo que estamos preparados para comenzar a escribir y ejecutar código Python. Veremos cómo ejecutar código Python <strong>desde la consola directamente o desde un archivo</strong> de extensión <code>.py</code> </p>
 <h3 id="consola-de-python">Consola de Python</h3>
 <p>La consola de Python nos <strong>permite ejecutar código escrito en Python directamente</strong>, sin tener que escribir el código previamente en ningún fichero. Para entrar en la consola de Python, abre una consola (también conocidda como terminal o shell) del sistema operativo en el que te encuentres y escribe <code>py</code> o <code>python</code>. Esto nos mostrará la versión de Python instalada y dará comienzo a la consola de Python:</p>
-<div class="highlight"><pre><span></span><code>    <span class="n">python</span>
-    <span class="n">Python</span> <span class="mf">3.7.3</span> <span class="p">(</span><span class="n">v3</span><span class="mf">.7.3</span><span class="p">:</span><span class="n">ef4ec6ed12</span><span class="p">,</span> <span class="n">Mar</span> <span class="mi">25</span> <span class="mi">2019</span><span class="p">,</span> <span class="mi">21</span><span class="p">:</span><span class="mi">26</span><span class="p">:</span><span class="mi">53</span><span class="p">)</span> <span class="p">[</span><span class="n">MSC</span> <span class="n">v</span><span class="mf">.1916</span> <span class="mi">32</span> <span class="n">bit</span> <span class="p">(</span><span class="n">Intel</span><span class="p">)]</span> <span class="n">on</span> <span class="n">win32</span>
-    <span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
-    <span class="o">&gt;&gt;&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="n">python</span>
+<span class="n">Python</span> <span class="mf">3.7.3</span> <span class="p">(</span><span class="n">v3</span><span class="mf">.7.3</span><span class="p">:</span><span class="n">ef4ec6ed12</span><span class="p">,</span> <span class="n">Mar</span> <span class="mi">25</span> <span class="mi">2019</span><span class="p">,</span> <span class="mi">21</span><span class="p">:</span><span class="mi">26</span><span class="p">:</span><span class="mi">53</span><span class="p">)</span> <span class="p">[</span><span class="n">MSC</span> <span class="n">v</span><span class="mf">.1916</span> <span class="mi">32</span> <span class="n">bit</span> <span class="p">(</span><span class="n">Intel</span><span class="p">)]</span> <span class="n">on</span> <span class="n">win32</span>
+<span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;</span>
 </code></pre></div>
 <p>Verás cómo el cursor cambia y ahora aparece el símbolo <code>&gt;&gt;&gt;</code>. A partir de ahora ya podemos ir ejecutando las instrucciones que queramos. En este caso escribiremos nuestro primer programa, el ya por todos conocido ¡Hola Mundo!:</p>
-<div class="highlight"><pre><span></span><code>    <span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola Mundo!&quot;</span><span class="p">)</span>
-    <span class="err">¡</span><span class="n">Hola</span> <span class="n">Mundo</span><span class="err">!</span>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola Mundo!&quot;</span><span class="p">)</span>
+<span class="err">¡</span><span class="n">Hola</span> <span class="n">Mundo</span><span class="err">!</span>
 </code></pre></div>
 <p>También puedes ejecutar otras instrucciones. Prueba a ejecutar la siguiente operación:</p>
-<div class="highlight"><pre><span></span><code>    <span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span><span class="o">*</span><span class="mi">3</span>
-    <span class="mi">9</span>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span><span class="o">*</span><span class="mi">3</span>
+<span class="mi">9</span>
 </code></pre></div>
 <p>Para salir de la consola de Python, escribe <code>exit()</code> o pulsa <code>CTRL + Z</code> y <code>ENTER</code>.</p>
 <h3 id="ejecutar-fichero">Ejecutar fichero</h3>
 <p>También podemos escribir nuestro código en un <strong>fichero con extensión <code>.py</code></strong> y ejecutarlo. Abre un editor de texto y crea un fichero llamado <code>holamundo.py</code> con el siguiente contenido:</p>
-<div class="highlight"><pre><span></span><code>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola Mundo!&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola Mundo!&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Para ejecutar el archivo, abre una consola de comandos en la misma ubicación donde has guardado el archivo y escribe <code>python</code>seguido del nombre del fichero:</p>
-<pre><code>python holamundo.py
-</code></pre>
+<div class="highlight"><pre><span></span><code>    python holamundo.py
+</code></pre></div>
 <p>¡Enhorabuena! Ya has escrito y ejecutado tu primer programa en Python.</p>
 <h2 id="sintaxis">Sintaxis</h2>
 <h3 id="indentacion">Indentación</h3>
@@ -872,8 +872,8 @@ En caso de no estar instalado, basta con ejecutar el siguiente comando en la con
 </code></pre></div>
 <h3 id="comentarios">Comentarios</h3>
 <p>A la hora de programar es posible que queramos introducir en el código comentarios que añadan información extra sin afectar a la ejecución del programa. En Python los comentarios se insertan mediante el carácter hash (<code>#</code>):</p>
-<div class="highlight"><pre><span></span><code>    <span class="c1"># Mi primer comentario</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># Un comentario junto con el código</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Mi primer comentario</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># Un comentario junto con el código</span>
 </code></pre></div>
 <h2 id="funcionamiento-de-python">Funcionamiento de Python</h2>
 <p>Python ejecuta nuestro código línea por línea. Por cada línea de código estas son las acciones que se realizan: </p>

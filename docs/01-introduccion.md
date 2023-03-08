@@ -80,24 +80,24 @@ Ya tenemos Python instalado en nuestro sistema operativo, por lo que estamos pre
 La consola de Python nos **permite ejecutar código escrito en Python directamente**, sin tener que escribir el código previamente en ningún fichero. Para entrar en la consola de Python, abre una consola (también conocidda como terminal o shell) del sistema operativo en el que te encuentres y escribe `py` o `python`. Esto nos mostrará la versión de Python instalada y dará comienzo a la consola de Python:
 
 ```python
-    python
-    Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
+python
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
 ```
 
 Verás cómo el cursor cambia y ahora aparece el símbolo `>>>`. A partir de ahora ya podemos ir ejecutando las instrucciones que queramos. En este caso escribiremos nuestro primer programa, el ya por todos conocido ¡Hola Mundo!:
 
 ```python
-    >>> print("¡Hola Mundo!")
-    ¡Hola Mundo!
+>>> print("¡Hola Mundo!")
+¡Hola Mundo!
 ```
 
 También puedes ejecutar otras instrucciones. Prueba a ejecutar la siguiente operación:
 
 ```python
-    >>> 3*3
-    9
+>>> 3*3
+9
 ```
 
 Para salir de la consola de Python, escribe `exit()` o pulsa `CTRL + Z` y `ENTER`.
@@ -108,12 +108,14 @@ Para salir de la consola de Python, escribe `exit()` o pulsa `CTRL + Z` y `ENTER
 También podemos escribir nuestro código en un **fichero con extensión `.py`** y ejecutarlo. Abre un editor de texto y crea un fichero llamado `holamundo.py` con el siguiente contenido:
 
 ```python
-    print("¡Hola Mundo!")
+print("¡Hola Mundo!")
 ```
 
 Para ejecutar el archivo, abre una consola de comandos en la misma ubicación donde has guardado el archivo y escribe `python`seguido del nombre del fichero:
 
+```bash
     python holamundo.py
+```
 
 ¡Enhorabuena! Ya has escrito y ejecutado tu primer programa en Python.
 
@@ -141,8 +143,8 @@ En caso contrario, al ejecutar nuestro código recibiremos un error como el sigu
 A la hora de programar es posible que queramos introducir en el código comentarios que añadan información extra sin afectar a la ejecución del programa. En Python los comentarios se insertan mediante el carácter hash (`#`):
 
 ```python
-    # Mi primer comentario
-    x = 5 # Un comentario junto con el código
+# Mi primer comentario
+x = 5 # Un comentario junto con el código
 ```
 
 ## Funcionamiento de Python
