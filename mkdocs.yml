@@ -1,1 +1,54 @@
-site_name: My Docs
+site_name: Aprende Python de cero a experto
+site_description: Guía online para aprender Python de cero a experto.
+site_url: https://aprendepython.netlify.app
+nav:
+    - Principal: index.md
+    - Introducción: 01-introduccion.md
+    - Tipos de datos y variables: 02-Tipos-de-datos-y-Variables.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/jonvadillo
+      name: Jon Vadillo on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/jvadillo
+      name: Jon Vadillo on Github
+theme:
+  name: material
+  language: es
+  favicon: "images/favicon.svg"
+  logo: "images/logo1.svg"
+  features:
+    - content.code.copy
+    - navigation.expand
+    #- toc.integrate # Integrate right column
+    - navigation.top # A back-to-top button is shown when the user, after scrolling down, starts to scroll up again
+    - navigation.footer
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to system preference
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+repo_name: jvadillo/aprende-python-web
+repo_url: https://github.com/jvadillo/aprende-python-web
+edit_uri: ''
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  
+copyright: 2023 Jon Vadillo - Licencia CC BY-NC-SA
