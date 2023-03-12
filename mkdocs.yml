@@ -35,6 +35,7 @@ extra:
       name: Jon Vadillo on Github
 theme:
   name: material
+  custom_dir: overrides # Necessary for overriding de 'scripts' block.
   language: es
   favicon: "images/favicon.svg"
   logo: "images/logo1.svg"
