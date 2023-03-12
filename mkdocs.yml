@@ -69,4 +69,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+extra_javascript:
+  - js/extra.js
+
+
 

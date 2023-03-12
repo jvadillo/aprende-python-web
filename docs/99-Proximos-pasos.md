@@ -11,6 +11,7 @@ Como ya te habíamos adelantado, **tu viaje en el mundo de Python solo acaba de 
 Podrás profundizar en cada una de estas ramas a partir de los conocimientos de los que dispones. En función del camino que elijas, podrás aprender frameworks como Django, Flask, Numpy, PyTorch, PANDAS, TensorFlow, Libmraa, ...
 
 A continuación te listo algunos de los recursos a los que sin duda alguna merecen la pena darles un vistazo:
+
 - [Tutoriales de Data Camp](https://www.learnpython.org/)
 - [Head First Python](https://www.amazon.es/dp/1491919531/?tag=devdetailpa03-21)
 - [Python Crash Course](https://www.amazon.es/Python-Crash-Course-Hands-Project-Based-ebook/dp/B018UXJ9RI/ref=sr_1_3?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=python&qid=1570180835&sr=8-3)

@@ -5,7 +5,7 @@
 
 Puedes también **descargar libro [aquí](https://leanpub.com/aprende-python/)**
 
-![Portada del libro Aprende Python desde cero a experto](https://github.com/jvadillo/aprende-python-desde-cero-a-experto/blob/master/manuscript/images/rsz2_aprende_python.png)
+![Portada del libro Aprende Python desde cero a experto](./images/rsz2_aprende_python.png)
 
 ## Conocimientos previos
 El curso **no requiere conocimientos previos** de ningún tipo ni experiencia en programación, pero en caso de tenerla podrás fortalecer los conocimientos que tienen en común los distintos lenguajes de programación y avanzar más rápido. No te preocupes si es la primera vez que te enfrentas a la programación, el libro está pensado para **acompañarte paso a paso y de forma ágil**, sin perder el tiempo aprendiendo aspectos irrelevantes del lenguaje.
