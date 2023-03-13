@@ -122,7 +122,7 @@ while(count < 5):
     print("Iteración número {}".format(count))
 else:
     print("Bucle while finalizado")
- ```   
+```   
 
 ### Sentencia FOR
 A diferencia de otros lenguajes de programación, en Python la sentencia FOR itera únicamente por secuencias (listas, tuplas, cadenas de caracteres,...).
