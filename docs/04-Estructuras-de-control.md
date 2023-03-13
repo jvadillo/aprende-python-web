@@ -164,7 +164,7 @@ for num in numeros:
     if num % 2 == 0:
         print("Numero par, no lo sumamos")
         continue
-    total += n
+    total += num
 ```
 
 #### Bucle FOR con ELSE
