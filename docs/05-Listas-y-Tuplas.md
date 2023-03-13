@@ -20,6 +20,7 @@ Las listas permiten **guardar más de un elemento** dentro de una variable, y ad
 ```
 
 Los **métodos más utilizados** con las listas son los siguientes:
+
 | Método | Acción |
 |--|--|
 | `alumnos.append("Amaia")` | Inserta "Jon" al final de la lista |
@@ -55,18 +56,18 @@ print(lista[2:]) # Salida: ['c', 'd', 'e', 'f']
 La forma habitual de recorrer una lista es mediante la sentencia `for`, tal y como muestra el ejemplo a continuación:
 
 ```python
-    for elemento in ['Python','JavaScript','JAVA']:
-        print("Programo en ", elemento)
+for elemento in ['Python','JavaScript','JAVA']:
+    print("Programo en ", elemento)
 ```
 De igual manera se podría hacer mediante la sentencia `while`:
 
 ```python
-    lista =  ['Python','JavaScript','JAVA']
-    i = 0
-    sizeofList = len(lista) 
-    while i < sizeofList :
-        print(lista[i]) 
-        i += 1
+lista =  ['Python','JavaScript','JAVA']
+i = 0
+sizeofList = len(lista) 
+while i < sizeofList :
+    print(lista[i]) 
+    i += 1
 ```
 
 
@@ -74,37 +75,39 @@ De igual manera se podría hacer mediante la sentencia `while`:
 Las tuplas son **listas inmutables**. Es decir, una vez declaradas, no se pueden realizar modificaciones sobre ellas (añadir/eliminar elementos o hacer modificaciones sobre ellos). Para definir una tupla se escriben los elementos entre paréntesis:
 
 ```python
-    valores = (1,2,3,4,5)
-    print(valores)  # Salida: (1, 2, 3, 4, 5) 
-    
-    # tuple with mixed datatypes
-    valores_mixtos = (1, "Hola", 2.5, False)
-    print(valores_mixtos)  # Salida: (1, 'Hola', 2.5, False)
+valores = (1,2,3,4,5)
+print(valores)  # Salida: (1, 2, 3, 4, 5) 
+
+# tuple with mixed datatypes
+valores_mixtos = (1, "Hola", 2.5, False)
+print(valores_mixtos)  # Salida: (1, 'Hola', 2.5, False)
 ```
 El acceso a sus elementos se hace de igual que con listas:
 
 ```python
-    valores = ("a", "b", "c","d","e","f")  
-    print(valores[1]) # Salida: 'b'
-    print(valores[2:4]) # Salida: ('c', 'd')
+valores = ("a", "b", "c","d","e","f")  
+print(valores[1]) # Salida: 'b'
+print(valores[2:4]) # Salida: ('c', 'd')
 ```
 
 Una acción típica de las tuplas es "desempaquetar" (unpack) sus valores, es decir, asignarlos a variables directamente:
 
 ```python
-    tupla = (1, "Hola", 2.5) # Creamos la tupla
-    
-    var1, var2, var3 = tupla # Hacemos el unpack
-    
-    print(var1)      # 1
-    print(var2)      # 'Hola' 
-    print(var3)      # 2.5
+tupla = (1, "Hola", 2.5) # Creamos la tupla
+
+var1, var2, var3 = tupla # Hacemos el unpack
+
+print(var1)      # 1
+print(var2)      # 'Hola' 
+print(var3)      # 2.5
 ```
 
 ## Coding time!
 
 ### Ejercicio 1
+
 Dada la siguiente lista `[12, 23, 5, 29, 92, 64]` realiza las siguientes operaciones y vete mostrando la lista resultante por pantalla:
+
 1. Elimina el último número y añádelo al principio.
 2. Mueve el segundo elemento a la última posición.
 3. Añade el número `14` al comienzo de la lista.
@@ -129,5 +132,6 @@ Resultado:
 
 ### Ejercicio 2
 Crea un programa que solicite al usuario 5 números y los guarde en una lista. A continuación el programa pedirá otros 5 números al usuario almacenándolos en una segunda lista. El programa mostrará al usuario una lista que contenga los números que tienen en común las dos listas anteriores.
+
 - Ejemplo: Lista 1 = `[6,14,11,78,5]` y Lista 2 = `[3,14,22,78,9]`
 - Resultado: `[14, 78]`
