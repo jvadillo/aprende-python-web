@@ -626,7 +626,7 @@
 <p>El parámetro <code>self</code> de los métodos es una referencia a la propia instancia y se utiliza para acceder a las variables que pertenecen a la clase. Si no se define un constructor, la clase hereda uno que únicamente recibe el argumento <code>self</code>.</p>
 <h2 id="atributos-de-clase-vs-atributos-de-instancia">Atributos de clase vs Atributos de instancia</h2>
 <p>Los atributos definidos dentro del constructor se conocen como <strong>atributos de instancia</strong>, por lo tanto, los atributos definidos dentro de la clase pero fuera del constructor se conocen como <strong>atributos de clase</strong>.</p>
-<p>La principal diferencia es que un atributto de clase puede ser accedido aunque no existan instancias de la clase. Además, si se modifica su valor, se modificará el valor en todas las instancias existentes de dicha clase.</p>
+<p>La principal diferencia es que un atributo de clase puede ser accedido aunque no existan instancias de la clase. Además, si se modifica su valor, se modificará el valor en todas las instancias existentes de dicha clase.</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Demo</span><span class="p">:</span>
     <span class="n">atrib_estatico</span> <span class="o">=</span> <span class="mi">123</span> <span class="c1"># compartido por todos los objetos</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">numero</span><span class="p">):</span>
@@ -678,6 +678,20 @@
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_nombre</span> <span class="o">=</span> <span class="n">nombre</span>  <span class="c1"># atributo protected </span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__edad</span> <span class="o">=</span> <span class="n">edad</span> <span class="c1"># atributo private</span>
+</code></pre></div>
+<p>Los atributos con un solo guión bajo podrán ser accedidos y modificados al crear instancias de la clase (como si fuesen públicos). En el caso de los privados la cosa cambia. Python los almacenará internamente con otro nombre: añadirá como prefijo un guión bajo y el nombre de la clase. En el ejemplo anterior, el atributo <code>__edad</code> se almacenaría como <code>_Persona__edad</code>. A esto se le conoce como <code>Name mangling</code>.md-button</p>
+<p>El ejemplo a continuación muestra claramente el funcionamiento:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Persona</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_nombre</span> <span class="o">=</span> <span class="n">nombre</span>  <span class="c1"># atributo protected </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__edad</span> <span class="o">=</span> <span class="n">edad</span> <span class="c1"># atributo private`</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">Persona</span><span class="p">(</span><span class="s2">&quot;Ane&quot;</span><span class="p">,</span> <span class="s2">&quot;Eguren&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span> <span class="c1"># Muestra los atributos de p1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">_nombre</span><span class="p">)</span> <span class="c1"># Puedo acceder sin problemas</span>
+<span class="n">p1</span><span class="o">.</span><span class="n">_nombre</span> <span class="o">=</span> <span class="s2">&quot;Lorea&quot;</span> <span class="c1"># Puedo modificar sin problemas</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">_Persona__edad</span><span class="p">)</span> <span class="c1"># Se almacena así para evitar problemas. Name mangling.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">__edad</span><span class="p">)</span> <span class="c1"># Error, el intérprete nos dirá que no existe.</span>
 </code></pre></div>
 <h2 id="coding-time">Coding time!</h2>
 <h3 id="ejercicio-1">Ejercicio 1</h3>

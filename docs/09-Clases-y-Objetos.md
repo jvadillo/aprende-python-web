@@ -52,7 +52,7 @@ El parámetro `self` de los métodos es una referencia a la propia instancia y s
 ## Atributos de clase vs Atributos de instancia
 Los atributos definidos dentro del constructor se conocen como **atributos de instancia**, por lo tanto, los atributos definidos dentro de la clase pero fuera del constructor se conocen como **atributos de clase**.
 
-La principal diferencia es que un atributto de clase puede ser accedido aunque no existan instancias de la clase. Además, si se modifica su valor, se modificará el valor en todas las instancias existentes de dicha clase.
+La principal diferencia es que un atributo de clase puede ser accedido aunque no existan instancias de la clase. Además, si se modifica su valor, se modificará el valor en todas las instancias existentes de dicha clase.
 
 ```python
 class Demo:
@@ -113,6 +113,24 @@ class Persona:
     def __init__(self, nombre, edad):
         self._nombre = nombre  # atributo protected 
         self.__edad = edad # atributo private
+```
+
+Los atributos con un solo guión bajo podrán ser accedidos y modificados al crear instancias de la clase (como si fuesen públicos). En el caso de los privados la cosa cambia. Python los almacenará internamente con otro nombre: añadirá como prefijo un guión bajo y el nombre de la clase. En el ejemplo anterior, el atributo `__edad` se almacenaría como `_Persona__edad`. A esto se le conoce como `Name mangling`.md-button
+
+El ejemplo a continuación muestra claramente el funcionamiento:
+
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self._nombre = nombre  # atributo protected 
+        self.__edad = edad # atributo private`
+
+p1 = Persona("Ane", "Eguren")
+print(p1.__dict__) # Muestra los atributos de p1
+print(p1._nombre) # Puedo acceder sin problemas
+p1._nombre = "Lorea" # Puedo modificar sin problemas
+print(p1._Persona__edad) # Se almacena así para evitar problemas. Name mangling.
+print(p1.__edad) # Error, el intérprete nos dirá que no existe.
 ```
 
 ## Coding time!
