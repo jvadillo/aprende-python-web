@@ -568,7 +568,7 @@
 <span class="k">class</span> <span class="nc">Teclado</span><span class="p">(</span><span class="n">Dispositivo</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">identificador</span><span class="p">,</span><span class="n">marca</span><span class="p">,</span><span class="n">tipo</span><span class="p">):</span>
         <span class="c1"># llamada al constructor del padre</span>
-        <span class="n">Dispositivo</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">identificador</span><span class="p">,</span><span class="n">marca</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">identificador</span><span class="p">,</span><span class="n">marca</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span> <span class="o">=</span> <span class="n">tipo</span>
     <span class="c1"># metodo de la subclase</span>
     <span class="k">def</span> <span class="nf">pulsar_tecla</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">tecla</span><span class="p">):</span>
@@ -579,6 +579,7 @@
 <span class="n">t1</span><span class="o">.</span><span class="n">conectar</span><span class="p">()</span>
 <span class="n">t1</span><span class="o">.</span><span class="n">pulsar_tecla</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
 </code></pre></div>
+<p>En el ejemplo anterior aparece la llamada al método <strong><code>super()</code></strong>. Este método devuelve una instancia (temporal) de la clase padre de la que estamos heredando de forma que podamos llamar a todos sus métodos. De esta forma podemos <strong>evitar duplicar código</strong>.</p>
 <h2 id="herencia-multiple">Herencia múltiple</h2>
 <p>Python soporta la herencia múltiple, es decir, heredad métodos y atributos de más de un padre. En caso de heredar atributos o métodos con el mismo nombre, Python dará prioridad al posicionado más a la izquierda en la declaración.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># en caso de conflicto Dispositivo tendrá prioridad sobre Periférico</span>

@@ -27,7 +27,7 @@ class Dispositivo:
 class Teclado(Dispositivo):
 	def __init__(self,identificador,marca,tipo):
 		# llamada al constructor del padre
-		Dispositivo.__init__(self,identificador,marca)
+		super().__init__(identificador,marca)
 		self.tipo = tipo
 	# metodo de la subclase
 	def pulsar_tecla(self,tecla):
@@ -38,6 +38,8 @@ print(f"Id: {t1.identificador}, Marca: {t1.marca}, tipo: {t1.tipo}")
 t1.conectar()
 t1.pulsar_tecla("a")
 ```	
+
+En el ejemplo anterior aparece la llamada al método **`super()`**. Este método devuelve una instancia (temporal) de la clase padre de la que estamos heredando de forma que podamos llamar a todos sus métodos. De esta forma podemos **evitar duplicar código**.
 
 ## Herencia múltiple
 
